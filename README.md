@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍆 بتنجان وبس (Menu-Bitinjan)
 
-## Getting Started
+تطبيق ويب متكامل لإدارة وعرض قوائم الطعام (المنيو) والعروض الخاصة بالمطاعم، مبني بأحدث تقنيات الويب **Next.js 15 (App Router)** و **Supabase**.
 
-First, run the development server:
+![صورة المشروع](/public/hero-bg.jpg)
 
+## 🌟 المميزات (Features)
+
+- **واجهة مستخدم عصرية وسريعة:** تصميم متجاوب (Responsive) يعمل بشكل مثالي على جميع الأجهزة (الموبايل، التابلت، والكمبيوتر).
+- **منيو ديناميكي (Dynamic Menu):** عرض الأقسام والأصناف بشكل منظم مع إمكانية تحديد أحجام وأسعار متعددة للصنف الواحد.
+- **عروض حصرية (Offers Slider):** شريط تمرير (Slider) لعرض أحدث العروض بشكل جذاب للزوار.
+- **لوحة تحكم متكاملة (Admin Dashboard):**
+  - إضافة، تعديل، وحذف أقسام المنيو.
+  - إدارة الأصناف وأسعارها وصورها.
+  - التحكم في العروض الحصرية (تفعيل/إيقاف).
+  - إدارة إعدادات الموقع العامة (رقم الواتساب، رسالة الطلب، النص الترحيبي).
+- **الطلب المباشر:** زر يربط الزائر مباشرة برقم واتساب المطعم مع رسالة جاهزة للطلب.
+- **إدارة الصور:** رفع وتخزين صور الأصناف والعروض تلقائياً على **Supabase Storage**.
+
+## 🛠️ التقنيات المستخدمة (Tech Stack)
+
+- **إطار العمل:** [Next.js (React)](https://nextjs.org/)
+- **لغة البرمجة:** [TypeScript](https://www.typescriptlang.org/)
+- **قاعدة البيانات والتخزين (Backend/Storage):** [Supabase](https://supabase.com/)
+- **التصميم وتنسيق الواجهات:** CSS Modules (Vanilla CSS)
+- **الأيقونات:** [Lucide React](https://lucide.dev/)
+
+## 🚀 كيفية تشغيل المشروع محلياً (Local Development)
+
+### 1. تثبيت الحزم (Install Dependencies)
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. إعداد متغيرات البيئة (Environment Variables)
+قم بإنشاء ملف `.env.local` في المجلد الرئيسي للمشروع، وأضف فيه مفاتيح Supabase الخاصة بك:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. تشغيل خادم التطوير (Run Development Server)
+```bash
+npm run dev
+```
+افتح المتصفح على الرابط [http://localhost:3000](http://localhost:3000) لرؤية الموقع.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ☁️ النشر (Deployment)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+هذا المشروع مهيأ ومُحسّن للرفع المباشر على منصة [Vercel](https://vercel.com).
+عند الرفع، تأكد من إضافة متغيرات البيئة (`Environment Variables`) المذكورة أعلاه في إعدادات المشروع على Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+**تطوير:** Shaban Aly 
