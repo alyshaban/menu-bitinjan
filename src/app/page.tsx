@@ -38,7 +38,7 @@ export default async function Home() {
       <footer className={styles.footer}>
         <p>© 2026 بتنجان وبس. جميع الحقوق محفوظة.</p>
         <p className={styles.credits}>
-          تم التطوير بواسطة <a href="https://shabanaly.netlify.app/" target="_blank" rel="noopener noreferrer">shaban aly</a>
+          تم التطوير بواسطة <a href="https://shabanaly.vercel.app/" target="_blank" rel="noopener noreferrer">shaban aly</a>
         </p>
       </footer>
 
