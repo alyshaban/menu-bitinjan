@@ -1,0 +1,49 @@
+.section {
+  background: linear-gradient(to bottom, var(--color-surface) 0%, var(--color-background) 100%);
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* The slide wrapper — key changes force React to remount this,
+   triggering the .offerSlide animation defined in globals.css */
+.slideWrapper {
+  width: 100%;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: var(--color-border);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dotActive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: var(--color-secondary);
+  transform: scale(1.35);
+  transition: background 0.3s ease, transform 0.3s ease;
+}

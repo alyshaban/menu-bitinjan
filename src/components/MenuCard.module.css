@@ -1,0 +1,110 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 4px 20px rgba(255, 183, 3, 0.1);
+}
+
+.specialCard {
+  border-color: var(--color-secondary-dark);
+  background: linear-gradient(145deg, var(--color-surface) 0%, #301705 100%);
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-bottom-right-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.description {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.pricesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.size {
+  color: var(--color-text-main);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted var(--color-border);
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.price {
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}

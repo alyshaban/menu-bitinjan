@@ -1,0 +1,112 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: popIn 0.2s ease;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.iconWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.title {
+  color: var(--color-text-main);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cancelBtn {
+  flex: 1;
+  padding: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelBtn:hover {
+  border-color: var(--color-text-main);
+  color: var(--color-text-main);
+}
+
+.confirmBtn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.danger:hover {
+  background: #dc2626;
+}
+
+.primary {
+  background: var(--color-secondary);
+  color: #120d09;
+}
+
+.primary:hover {
+  filter: brightness(1.1);
+}
