@@ -6,6 +6,10 @@ import { ConfirmProvider } from "@/components/admin/ConfirmDialog";
 
 export const metadata = {
   title: "لوحة تحكم بتنجان وبس",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function AdminLayout({

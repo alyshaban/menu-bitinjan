@@ -8,8 +8,36 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "منيو بتنجان وبس",
-  description: "أول لقمة هتفكرك بأكل البيت الحلو",
+  title: "بتنجان وبس | أصل المسقعة وألذ أكل بيتي",
+  description: "أول لقمة هتفكرك بأكل البيت الحلو. استمتع بألذ مسقعة وخلطات البتنجان السرية وأكثر من مطعم بتنجان وبس.",
+  keywords: ["بتنجان", "مسقعة", "أكل بيتي", "مطعم", "بتنجان وبس", "توصيل أكل", "طعام مصري", "مطعم مصري"],
+  authors: [{ name: "بتنجان وبس" }],
+  openGraph: {
+    title: "بتنجان وبس | أصل المسقعة وألذ أكل بيتي",
+    description: "أول لقمة هتفكرك بأكل البيت الحلو. استمتع بألذ مسقعة وخلطات البتنجان السرية.",
+    url: "https://bitinjanwbas.com",
+    siteName: "بتنجان وبس",
+    images: [
+      {
+        url: "https://menu-bitinjan.vercel.app/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "بتنجان وبس - أكل بيتي",
+      },
+    ],
+    locale: "ar_EG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "بتنجان وبس | أصل المسقعة",
+    description: "أول لقمة هتفكرك بأكل البيت الحلو. اطلب الآن من منيو بتنجان وبس.",
+    images: ["https://menu-bitinjan.vercel.app/hero-bg.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
