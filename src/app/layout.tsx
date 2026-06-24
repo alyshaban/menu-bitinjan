@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "بتنجان وبس | أصل المسقعة وألذ أكل بيتي",
     description: "أول لقمة هتفكرك بأكل البيت الحلو. استمتع بألذ مسقعة وخلطات البتنجان السرية.",
-    url: "https://bitinjanwbas.com",
+    url: "https://bitinjanwbas.vercel.app",
     siteName: "بتنجان وبس",
     images: [
       {
-        url: "https://menu-bitinjan.vercel.app/hero-bg.jpg",
+        url: "https://bitinjanwbas.vercel.app/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "بتنجان وبس - أكل بيتي",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "بتنجان وبس | أصل المسقعة",
     description: "أول لقمة هتفكرك بأكل البيت الحلو. اطلب الآن من منيو بتنجان وبس.",
-    images: ["https://menu-bitinjan.vercel.app/hero-bg.jpg"],
+    images: ["https://bitinjanwbas.vercel.app/hero-bg.jpg"],
   },
   robots: {
     index: true,
