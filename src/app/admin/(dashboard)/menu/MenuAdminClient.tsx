@@ -24,7 +24,12 @@ export default function MenuAdminClient({ initialData: categories }: { initialDa
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // New/Edit Item State
-  const [newItem, setNewItem] = useState({
+  const [newItem, setNewItem] = useState<{
+    name: string;
+    description: string;
+    imageUrl: string;
+    prices: { size: string; price: string | number }[];
+  }>({
     name: "",
     description: "",
     imageUrl: "",
