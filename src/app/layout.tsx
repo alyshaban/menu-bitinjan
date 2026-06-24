@@ -8,12 +8,13 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "بتنجان وبس | أصل المسقعة وألذ أكل بيتي",
+  title: "بتنجان وبس | أصل البتنجان وألذ مسقعة بيتي",
   description: "أول لقمة هتفكرك بأكل البيت الحلو. استمتع بألذ مسقعة وخلطات البتنجان السرية وأكثر من مطعم بتنجان وبس.",
   keywords: ["بتنجان", "مسقعة", "أكل بيتي", "مطعم", "بتنجان وبس", "توصيل أكل", "طعام مصري", "مطعم مصري"],
   authors: [{ name: "بتنجان وبس" }],
   openGraph: {
-    title: "بتنجان وبس | أصل المسقعة وألذ أكل بيتي",
+      title: "بتنجان وبس | أصل البتنجان وألذ مسقعة بيتي",
+
     description: "أول لقمة هتفكرك بأكل البيت الحلو. استمتع بألذ مسقعة وخلطات البتنجان السرية.",
     url: "https://bitinjanwbas.vercel.app",
     siteName: "بتنجان وبس",
@@ -30,7 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "بتنجان وبس | أصل المسقعة",
+      title: "بتنجان وبس | أصل البتنجان وألذ مسقعة بيتي",
+
     description: "أول لقمة هتفكرك بأكل البيت الحلو. اطلب الآن من منيو بتنجان وبس.",
     images: ["https://bitinjanwbas.vercel.app/hero-bg.jpg"],
   },
