@@ -1,4 +1,4 @@
-import { MenuItem } from "@/data/menu";
+import { MenuItem } from "@/types";
 import Image from "next/image";
 import styles from "./MenuCard.module.css";
 

@@ -50,7 +50,7 @@ export default function OffersAdminClient({ initialOffers: offers }: { initialOf
       specialText: offer.specialText || "",
       imageUrl: offer.imageUrl || "",
       size: offer.size,
-      price: offer.price,
+      price: offer.price.toString(),
       isActive: offer.isActive
     });
     setImageFile(null);

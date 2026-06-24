@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Plus, Trash2, X, Edit, Image as ImageIcon } from "lucide-react";
 import { addCategory, editCategory, deleteCategory, addMenuItem, editMenuItem, deleteMenuItem, uploadImageAction } from "./actions";
-import { MenuCategory } from "@/data/menu";
+import { MenuCategory, MenuItem } from "@/types";
 import { useToast } from "@/components/admin/Toast";
 import { useConfirm } from "@/components/admin/ConfirmDialog";
 import styles from "./page.module.css";

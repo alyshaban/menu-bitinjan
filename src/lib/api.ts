@@ -1,5 +1,5 @@
 import { supabase } from './supabase';
-import { MenuItem, MenuCategory } from '@/data/menu';
+import { MenuItem, MenuCategory } from '@/types';
 import { unstable_cache } from 'next/cache';
 
 export const getSettings = unstable_cache(

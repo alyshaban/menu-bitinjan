@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { MenuItem } from "@/data/menu";
+import { MenuItem } from "@/types";
 import MenuCard from "./MenuCard";
 import styles from "./OffersSlider.module.css";
 
